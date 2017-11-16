@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+.todolist-table {
+    table-layout:fixed;
+}
+.todolist-td {
+    width="100%";
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
