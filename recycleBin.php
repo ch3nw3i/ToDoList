@@ -32,12 +32,9 @@
         include DAL_TASK;
 	    $username = $_SESSION['username'];
 	    $userid = $_SESSION['userid'];
-//	    echo $userid;
-//	    $quadrant = $_SESSION['quadrant'];
 	    $is_deleted = 1;
         $task = new Task();
         $arr = $task->getTasksByUserIdAndIsDeleted($userid, $is_deleted);
-//        print_r($arr);
         foreach ($arr as $taskinfo) {
     ?>
         <tr>
